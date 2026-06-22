@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UMS - Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Admin Dashboard</h1>
+    <nav><a href="index.html">Home</a> | <a href="#" id="logoutLink">Logout</a></nav>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar panel">
+      <ul>
+        <li><a href="student-management.html">Student Management</a></li>
+        <li><a href="teacher-management.html">Teacher Management</a></li>
+        <li><a href="course-allocation.html">Course Allocation</a></li>
+        <li><a href="attendance.html">Attendance</a></li>
+        <li><a href="exam-management.html">Exam Management</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="fee-management.html">Fee Management</a></li>
+        <li><a href="timetable.html">Timetable</a></li>
+        <li><a href="notices.html">Notices</a></li>
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+    </aside>
+
+    <main class="content panel">
+      <h2>Overview</h2>
+      <p>Use the sidebar to navigate modules. Data is fetched from the API.</p>
+      <div class="cards">
+        <div class="card">Students: <span id="stat-students">0</span></div>
+        <div class="card">Teachers: <span id="stat-teachers">0</span></div>
+        <div class="card">Fees Due: <span id="stat-fees">0</span></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

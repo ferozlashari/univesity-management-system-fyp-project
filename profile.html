@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Profile</h1>
+    <nav><a href="student-dashboard.html">Back</a></nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Your Profile</h2>
+      <form id="profileForm" class="small-form">
+        <label>Name</label>
+        <input id="prof-name" />
+        <label>Roll</label>
+        <input id="prof-roll" disabled />
+        <label>Email</label>
+        <input id="prof-email" type="email" />
+        <button class="btn" type="submit">Update</button>
+      </form>
+      <div id="profileMsg" class="muted"></div>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

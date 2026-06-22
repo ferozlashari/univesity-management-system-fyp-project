@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Student Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Student Management</h1>
+    <nav><a href="admin-dashboard.html">Back</a></nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Students</h2>
+
+      <form id="studentAddForm" class="small-form">
+        <input id="sname" placeholder="Name" required>
+        <input id="sroll" placeholder="Roll/ID" required>
+        <input id="semail" placeholder="Email" type="email">
+        <button type="submit" class="btn">Add Student</button>
+      </form>
+
+      <table id="studentsTable" class="table">
+        <thead><tr><th>Roll</th><th>Name</th><th>Email</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

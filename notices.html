@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Notices</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Notices</h1>
+    <nav><a href="admin-dashboard.html">Admin</a> | <a href="student-dashboard.html">Student</a></nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Notices</h2>
+      <form id="noticeForm" class="small-form">
+        <input id="noticeTitle" placeholder="Title" required>
+        <textarea id="noticeBody" placeholder="Notice text" required></textarea>
+        <button class="btn" type="submit">Post Notice</button>
+      </form>
+
+      <ul id="noticesList" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

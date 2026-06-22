@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UMS - Student Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Student Dashboard</h1>
+    <nav><a href="index.html">Home</a> | <a href="#" id="logoutLinkS">Logout</a></nav>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar panel">
+      <ul>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="attendance.html">Attendance</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="fee-management.html">Fees</a></li>
+        <li><a href="timetable.html">Timetable</a></li>
+        <li><a href="notices.html">Notices</a></li>
+      </ul>
+    </aside>
+
+    <main class="content panel">
+      <h2>Welcome, Student</h2>
+      <div class="cards">
+        <div class="card">Attendance: <span id="stu-att">--</span></div>
+        <div class="card">GPA: <span id="stu-gpa">--</span></div>
+        <div class="card">Fees Due: <span id="stu-fee">--</span></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

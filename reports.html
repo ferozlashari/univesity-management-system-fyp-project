@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reports</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Reports</h1>
+    <nav><a href="admin-dashboard.html">Back</a></nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Generate Reports</h2>
+      <p>Use these quick reports (demo) to view counts and summaries.</p>
+      <div class="cards">
+        <div class="card">Total Students: <span id="r-students">0</span></div>
+        <div class="card">Total Teachers: <span id="r-teachers">0</span></div>
+        <div class="card">Total Fees Due: <span id="r-fees">0</span></div>
+      </div>
+      <div style="margin-top:12px">
+        <button id="exportCsv" class="btn">Export Students CSV</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

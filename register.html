@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UMS - Student Register</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>UMS - Student Registration</h1>
+    <nav><a href="index.html">Home</a> | <a href="login.html">Login</a></nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Student Registration</h2>
+      <form id="registerForm">
+        <label for="stu-name">Full Name</label>
+        <input id="stu-name" name="name" required />
+
+        <label for="stu-roll">Roll / ID</label>
+        <input id="stu-roll" name="roll" required />
+
+        <label for="stu-email">Email</label>
+        <input id="stu-email" name="email" type="email" required />
+
+        <label for="stu-password">Password</label>
+        <input id="stu-password" name="password" type="password" required />
+
+        <button type="submit" class="btn">Register</button>
+      </form>
+      <div id="regMsg" class="muted"></div>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

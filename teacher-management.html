@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Teacher Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Teacher Management</h1>
+    <nav><a href="admin-dashboard.html">Back</a></nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Teachers</h2>
+      <form id="teacherAddForm" class="small-form">
+        <input id="tname" placeholder="Name" required>
+        <input id="tdesignation" placeholder="Designation">
+        <input id="temail" placeholder="Email" type="email">
+        <button type="submit" class="btn">Add Teacher</button>
+      </form>
+
+      <table id="teachersTable" class="table">
+        <thead><tr><th>Name</th><th>Designation</th><th>Email</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
